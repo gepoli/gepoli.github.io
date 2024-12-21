@@ -32,15 +32,28 @@
             top: 0;
             z-index: 1000;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center; /* Center content horizontally */
+            align-items: center;    /* Center content vertically */
+            flex-direction: row;    /* Align the image, title, and description in a row */
         }
+
+        header img {
+            width: 120px;  /* Increase the size of the logo */
+            height: auto;
+            margin-right: 300px; /* Space between logo and text */
+            margin-left: -500px;  /* Move the image more to the left */
+        }
+
         header h1 {
             margin: 0;
             font-size: 3rem;
             font-weight: bold;
         }
+
         header p {
             font-size: 1.1rem;
-            margin-top: 0.5rem;
+            margin-top: 1rem;  /* Add some space before the description */
         }
 
         /* Main Content Styles */
@@ -154,8 +167,11 @@
 </head>
 <body>
     <header>
-        <h1>Complete World Geopolitical Analysis</h1>
-        <p>Project Gepoli offers an in-depth, neutral analysis of the current world geopolitical landscape in 2024, examining diplomacy, conflicts, and relations across all continents.</p>
+        <img src="https://gcdnb.pbrd.co/images/LWfqHJl3caM6.png?o=1" alt="Gepoli Logo">
+        <div>
+            <h1>Complete World Geopolitical Analysis</h1>
+            <p>Project Gepoli offers an in-depth, neutral analysis of the current world geopolitical landscape in 2024, examining diplomacy, conflicts, and relations across all continents.</p>
+        </div>
     </header>
 
     <div class="main-content">
